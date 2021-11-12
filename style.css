@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    min-height: 90vh;
+    background-color: #2c273f;
+}
+
+.container{
+    width: 600px;
+    margin: 4rem auto;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 2px #9494AC;
+    background-color: #221A32;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+}
+
+.form input{
+    flex: 1;
+    padding:7px;
+    font-family: inherit;
+    font-size: 17px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 4px;
+    font-weight: 400;
+    background-color: #4C4C5C;
+    color: #fff;
+}
+
+.form input::placeholder{
+    color: rgb(158, 158, 158);
+}
+
+.form .btn{
+    padding: 13px 20px;
+    background-color: #4D2EBC;
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.items{
+    margin-top: 1rem;
+}
+
+.item{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+
+.item:hover{
+    background: #2c273f;
+}
+
+.item button{
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0 2px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.fa-trash-alt{
+    color: tomato;
+}
+
+.fa-edit{
+    color: greenyellow;
+}
+
+.toaster{
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: #4D2EBC;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: 0.3s ease;
+}
+
+.toaster.active{
+    top: 1.5rem;
+}
+
+@media screen and (max-width:780px) {
+    .container{
+        width: 92%;
+    }
+}
